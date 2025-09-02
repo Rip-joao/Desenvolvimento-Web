@@ -1,0 +1,65 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>ChaGPT</title>
+    
+
+    
+    <style>
+      body {
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color:rgb(32, 32, 32);
+        color: rgb(255, 248, 248);
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>Mini ChatGPT</h1>
+    <div id="chatbox"></div>
+    <input type="text" id="RSPT" placeholder="Digite sua pergunta">
+    <button onclick="responder()">Enviar</button>
+
+    <script>
+          const respostas = {
+        "q é computacao na nuvem": "A computação na nuvem é a oferta sob demanda de recursos computacionais, como armazenamento e poder de processamento, pela Internet, permitindo que usuários paguem apenas pelos serviços utilizados em vez de manter infraestrutura física. Esse modelo de entrega oferece flexibilidade, escalabilidade e inovações mais rápidas, sendo os principais serviços Infraestrutura como Serviço (IaaS), Plataforma como Serviço (PaaS) e Software como Serviço (SaaS). ",
+        "oq é infraestrutura de ti": "A infraestrutura de TI é o conjunto de componentes físicos (hardware) e lógicos (software, redes, sistemas operacionais) necessário para que uma organização opere e gerencie seus serviços de tecnologia da informação. Ela inclui servidores, computadores, redes e sistemas operacionais, além de software para gerenciamento e armazenamento de dados. A infraestrutura pode ser tradicional (própria), na nuvem (terceirizada) ou hiperconvergente (com gestão centralizada), proporcionando maior flexibilidade, segurança e eficiência para os negócios. ",
+        "oq é saas": "SaaS (Software como Serviço) é um modelo de computação em nuvem onde software é entregue pela internet, geralmente através de uma subscrição, e não precisa ser instalado ou mantido localmente. O provedor da nuvem é responsável pela infraestrutura, segurança e atualizações, enquanto o usuário acede à aplicação online. Este modelo oferece benefícios como custos reduzidos, escalabilidade e acesso fácil a partir de qualquer dispositivo com internet. ",
+        "oq é paas": "PaaS refere-se a Plataforma como Serviço (Platform as a Service), um modelo de computação em nuvem que oferece um ambiente completo para que desenvolvedores possam criar, implantar e gerenciar aplicativos, sem a necessidade de gerenciar a infraestrutura subjacente (hardware, sistemas operacionais, etc.). O provedor de PaaS cuida dessa infraestrutura, permitindo que os desenvolvedores se concentrem apenas no código e no desenvolvimento do aplicativo. ",
+        "oq é iaas": "IaaS (Infraestrutura como Serviço) é um modelo de computação em nuvem onde os provedores alugam recursos de TI, como servidores, armazenamento e redes, a pedido dos clientes pela internet. Em vez de comprar e gerir o hardware físico, as empresas usam IaaS para ter acesso a recursos virtualizados em data centers, pagando apenas pelo que usam e ganhando escalabilidade e flexibilidade. ?",
+        "oq é virtualizacao": "AVirtualização é uma tecnologia que cria cópias digitais ou simuladas de recursos físicos de TI, como servidores, armazenamento e redes, permitindo que vários sistemas operacionais funcionem em uma única máquina física. Utilizando software para criar um ambiente virtual sobre o hardware, a virtualização permite o uso eficiente dos recursos, o isolamento de sistemas, a redução de custos e a maior flexibilidade da infraestrutura de TI, sendo um pilar fundamental da computação em nuvem. ",
+        "pnHT": "Lolicon delicia"
+      };
+    function responder() {
+        var input = document.getElementById("RSPT").value;
+        var chatbox = document.getElementById("chatbox");
+
+        
+        var pergunta = input.toLowerCase();
+
+      
+        var resposta = respostas[pergunta];
+
+        if (!resposta) {
+          resposta = "Desculpe, não sei responder isso.";
+        }
+
+        
+        var perguntaElemento = document.createElement("p");
+        perguntaElemento.innerText = "Você: " + input;
+        
+        var respostaElemento = document.createElement("p");
+        respostaElemento.innerText = "Mini ChatGPT: " + resposta;
+
+        
+        chatbox.appendChild(perguntaElemento);
+        chatbox.appendChild(respostaElemento);
+
+        
+        document.getElementById("RSPT").value = "";
+      }
+    </script>
+  </body>
+  </html>
