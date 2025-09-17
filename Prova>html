@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+</head>
+
+</style>
+ <style>
+    #body{
+        background-image: linear-gradient(rgb(255, 255, 255), Blue);
+    }
+    #header{
+        display: flex;
+        gap: 2%;
+        margin: 1% 2%;
+        margin-left: 15% ;
+        margin-right: 15%;
+        margin-top: auto;
+        background-color: rgb(112, 112, 112);
+        
+
+    }
+    #nav{
+        margin-left: 70% ; 
+ 
+       
+    }
+    #main{
+        
+        min-height: 800px;
+        margin-left: 15% ;      
+        margin-right: 15%;
+        background-color: rgb(0, 0, 0);
+    }
+    #input{
+        margin-top: 70%; 
+    }
+    #aside{
+    
+        margin-top: 1%;
+        margin-bottom: 1%;
+        min-height: 800px;
+        margin-left: 2% ;
+        margin-right: 70%;
+        background-color: rgb(255, 255, 255);
+    }
+    #section{
+      
+        margin-top: 1%;
+        min-height: 390px;  
+        margin-left: 35% ;
+        margin-right: 2%;
+        background-color: rgb(255, 255, 255);
+    }
+    #article{
+        margin-top: 1%;
+        min-height: 300px;
+        margin-left: 2% ;
+        margin-right: 2%;
+        background-color: rgb(53, 53, 53);
+
+    }
+    #footer{
+        margin-top: 1%;
+        min-height: 50px;
+        margin-left: 2% ;
+        margin-right: 2%;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+
+    </style>
+<body id="body">
+   <header id="header">
+    <nav id="nav"><input id="input" type="nome"> <input type="senha"> <button>ok</button></nav>
+   </header>
+   <main id="main">
+       <aside id="aside">Conteúdo do Aside</aside>
+        <section id="section">Conteúdo da Section</section>
+            <article id="article"><img src="https://preview.redd.it/animes-which-are-influenced-by-jojo-v0-dz6r4ma49ksd1.jpeg?width=640&crop=smart&auto=webp&s=dd1820b18a611f7c9aa984c1334f1935784b7cdf" alt="200"></article> 
+            <article id="article"><img src="https://viventeandante.com/wp-content/uploads/2025/03/JoJo-sBizarre-Adventure-anime.webp" alt="100"></article> 
+        </section>
+        <footer id="footer">João vitor e Paulo</footer>
+   </main>  
+
+</body>
+</html> 
