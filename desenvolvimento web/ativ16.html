@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Incrível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex: 1; /* Faz o main ocupar o espaço restante verticalmente */
+}
+
+section {
+    flex: 3; /* Ocupa 3 partes do espaço disponível */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+article {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+    background-color: #eee;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilo para a curiosidade do Exercício 2 */
+aside .curiosity-hidden {
+    display: none; /* Esconde a curiosidade por padrão */
+    padding: 10px;
+    background-color: #ffffe0; /* Um fundo claro para a curiosidade */
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+article aside:hover .curiosity-hidden {
+    display: block; /* Mostra a curiosidade ao passar o mouse sobre o aside */
+} </body>
+
+    <header>
+        <h1>Título do Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Título do Artigo Principal</h2>
+                <p>Conteúdo principal do artigo...</p>
+                <aside>
+                    <!-- Aqui entra a curiosidade com hover do Exercício 2 -->
+                    <p class="curiosity-hidden">Curiosidade: Você sabia que o HTML foi criado por Tim Berners-Lee?</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Outro Artigo</h2>
+                <p>Conteúdo de um segundo artigo...</p>
+            </article>
+        </section>
+        <aside class="sidebar">
+            <h3>Conteúdo Lateral</h3>
+            <p>Informações adicionais ou links relacionados.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
